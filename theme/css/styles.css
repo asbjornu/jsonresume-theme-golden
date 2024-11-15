@@ -11125,6 +11125,9 @@ header .main-navigation li.current > a {
   white-space: nowrap;
   text-transform: lowercase;
 }
+#resume .timeline-header .link a {
+  word-wrap: normal;
+}
 #resume .timeline-header .link a:link {
   text-decoration: none;
 }
@@ -13013,6 +13016,9 @@ img.mfp-img {
     left: 35%;
     top: 0;
     print-color-adjust: exact;
+  }
+  #resume .resume-timeline .timeline-block .link i.fa-solid {
+    display: none;
   }
   #resume .resume-timeline a:link,
   #resume .resume-timeline a:visited,
