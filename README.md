@@ -4,8 +4,9 @@
 testing.][percy-badge]][percy-link]
 [![Build status][build-badge]][build-link]
 
-This is a theme for [JSON Resume][jsonresume] based on the [Kards design][kards]
-by [styleshout], heavily modified to fit the needs of [asbjor.nu][asbjornu].
+This is a theme for [JSON Resume][jsonresume] based on the [Kards
+design][kards] by [styleshout], heavily modified to fit the needs of
+[asbjor.nu][asbjornu].
 
 |                                         |                                      |
 | --------------------------------------- | ------------------------------------ |
@@ -17,7 +18,8 @@ by [styleshout], heavily modified to fit the needs of [asbjor.nu][asbjornu].
 ### Serve theme
 
 If you have JSON Resume and this theme installed locally (through NPM or
-similar), you can run the following command to serve up a `resume.json` file:
+similar), you can run the following command to serve up a `resume.json`
+file:
 
 ```sh
 resume serve --theme golden --resume <path/to/resume.json>
@@ -34,8 +36,8 @@ The resume should open in a new tab in your default browser.
 
 ## Editing template
 
-If you need to edit the template to suit your needs, you can do so by following
-the below instructions.
+If you need to edit the template to suit your needs, you can do so by
+following the below instructions.
 
 ### Get source from GitHub
 
@@ -47,18 +49,19 @@ cd jsonresume-theme-golden
 ### Serve it up
 
 ```sh
-npx resume serve --theme . --resume <path/to/resume.json>
+RESUME="<path/to/resume.json>" npm start
 ```
 
-This will use the local version of the theme to render the `resume.json` file.
-If there is a local copy of resume.json this will be used.  Otherwise, it will
-use the default resume.json from [jsonresume.org](https://jsonresume.org/).
+This will use the local version of the theme to render the `resume.json`
+file specified in the `RESUME` environment variable. If there is a local
+copy of resume.json this will be used.  Otherwise, it will use the default
+resume.json from [jsonresume.org](https://jsonresume.org/).
 
 ### Change background images
 
-In order for the generated html to be self contained this theme ships with the
-background images embedded in the css. To change the images, edit the file
-`theme/less/config.less`:
+In order for the generated html to be self contained this theme ships with
+the background images embedded in the css. To change the images, edit the
+file `theme/less/config.less`:
 
 ```sh
 @bg-img-url: "data:image/...";
