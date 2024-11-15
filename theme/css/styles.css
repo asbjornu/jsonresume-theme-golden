@@ -11108,14 +11108,13 @@ header .main-navigation li.current > a {
 #resume .timeline-header .timeline-project-keywords li {
   font-family: "poppins-regular", sans-serif;
   display: inline;
-  border: 1px solid #e7e7e7;
-  color: #e7e7e7;
+  border: 1px solid #a1a1a1;
+  color: #a1a1a1;
   padding: 0.2rem 0.7rem;
   border-radius: 5px;
   font-size: 1.3rem;
   white-space: nowrap;
   text-transform: lowercase;
-  opacity: 0.6;
 }
 #resume .timeline-header .link a:link {
   text-decoration: none;
