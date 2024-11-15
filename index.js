@@ -135,12 +135,14 @@ function fixResume(resume) {
     fixEntries(resume.volunteer);
     fixEntries(resume.publications);
     fixEntries(resume.projects);
+    fixEntries(resume.references);
 
     resume.work = sort(resume.work, false, w => w.startDate);
     resume.volunteer = sort(resume.volunteer, false, v => v.startDate);
     resume.publications = sort(resume.publications, false, p => p.releaseDate);
     resume.projects = sort(resume.projects, false, p => p.startDate);
     resume.skills = sort(resume.skills, false, s => parseInt(s.level, 10), s => Array.isArray(s.keywords) && s.keywords.includes('Secondary'))
+    resume.references = sort(resume.references, false, r => r.date);
 }
 
 function fixEntries(entries) {

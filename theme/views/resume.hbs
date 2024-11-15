@@ -293,6 +293,33 @@
                 </article>
             {{/if}}
 
+            {{#if resume.references}}
+                <article class="row resume-timeline" id="references">
+                    <div class="col-twelve resume-header">
+                        <h2>References</h2>
+                    </div>
+                    <div class="col-twelve">
+                        <div class="timeline-wrap">
+                            {{#each resume.references}}
+                                {{#if (eq @index 1)}}
+                                    <div class="more" id="more-references">
+                                        <a class="reveal" href="#more-references">More references</a>
+                                        <div class="hidden">
+                                {{/if}}
+
+                                {{> timeline-block
+                                    icon="heart"
+                                    startDate=date
+                                    header=entity
+                                    title=name
+                                    summary=reference }}
+
+                                {{#if (gt ../resume.publications.length 1)}}{{#if @last}}</div></div>{{/if}}{{/if}}
+                            {{/each}}
+                        </div>
+                    </div>
+                </article>
+            {{/if}}
         </section>
 
         <section id="contact">
