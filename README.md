@@ -82,7 +82,7 @@ npx resume serve --theme . --resume <path_to_resume.json>
 ## License and credits
 
 The template design is available under [Creative Commons Attribution 3.0
-License](cc) attributed to [styleshout].
+License][cc] attributed to [styleshout].
 
 The source code for generating resume is available under [the MIT
 license][mit].
@@ -94,6 +94,7 @@ The background image is by [StockSnap] from [Pixabay].
 [asbjor.nu]: https://asbjor.nu/
 [build-badge]: https://github.com/asbjornu/jsonresume-theme-golden/actions/workflows/build.yml/badge.svg
 [build-link]: https://github.com/asbjornu/jsonresume-theme-golden/actions/workflows/build.yml
+[cc]: http://creativecommons.org/licenses/by/3.0/
 [contact-img]: https://raw.githubusercontent.com/asbjornu/jsonresume-theme-golden/refs/heads/main/docs/contact.png
 [contact-link]: https://asbjornu.github.io/jsonresume-theme-golden/#contact
 [intro-img]: https://raw.githubusercontent.com/asbjornu/jsonresume-theme-golden/refs/heads/main/docs/intro.png
