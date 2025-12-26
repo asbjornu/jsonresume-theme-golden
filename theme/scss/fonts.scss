@@ -2,9 +2,9 @@
  * FontAwesome
 ================================================================================ */
 
-@use '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome' as fa-core;
-@use '../../node_modules/@fortawesome/fontawesome-free/scss/solid' as fa-solid;
-@use '../../node_modules/@fortawesome/fontawesome-free/scss/brands' as fa-brands;
+@use 'pkg:@fortawesome/fontawesome-free/scss/fontawesome' as fa-core;
+@use 'pkg:@fortawesome/fontawesome-free/scss/solid' as fa-solid;
+@use 'pkg:@fortawesome/fontawesome-free/scss/brands' as fa-brands;
 
 /*
  * Lora

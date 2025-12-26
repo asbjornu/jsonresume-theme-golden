@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/asbjornu/jsonresume-theme-golden",
   "scripts": {
-    "build:styles": "sass theme/scss/styles.scss theme/css/styles.css",
+    "build:styles": "sass --pkg-importer=node theme/scss/styles.scss theme/css/styles.css",
     "build:webfonts": "mkdir -p ./public/webfonts && cp -r ./node_modules/@fortawesome/fontawesome-free/webfonts/* ./public/webfonts/",
     "build": "npm run build:webfonts && npm run build:styles",
     "serve": "npm run build && resume serve --theme . --resume ${RESUME:-example-resume.json}",
