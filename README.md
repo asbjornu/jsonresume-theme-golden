@@ -63,9 +63,8 @@ the background images embedded in the css. To change the images, edit the
 file `theme/scss/config.scss`:
 
 ```sh
-@bg-img-url: "data:image/...";
-@intro-bg-img-url: "data:image/...";
-@logo-img-url: "data:image/...";
+$bg-img-url: "data:image/...";
+$intro-bg-img-url: "data:image/...";
 ```
 
 Then rebuild:
