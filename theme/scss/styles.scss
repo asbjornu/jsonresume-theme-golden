@@ -1,6 +1,4 @@
-@import "colors.less";
-@import "config.less";
-@import "base.less";
-@import "main.less";
-@import "vendor.less";
-@import "print.less";
+@use "base.scss";
+@use "main.scss";
+@use "vendor.scss";
+@use "print.scss";

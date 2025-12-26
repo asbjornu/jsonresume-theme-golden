@@ -31,8 +31,8 @@
   "devDependencies": {
     "@percy/cli": "^1.24.0",
     "@percy/script": "^1.1.0",
-    "less": "^4.2.2",
-    "resume-cli": "^3.0.8"
+    "resume-cli": "^3.0.8",
+    "sass": "^1.97.1"
   },
   "engineStrict": true,
   "engines": {
