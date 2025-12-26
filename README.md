@@ -106,8 +106,8 @@ The background image is [Fog, Cold, Trees][bg-img] by [StockSnap] from
 [mit]: http://mths.be/mit
 [percy-badge]: https://percy.io/static/images/percy-badge.svg
 [percy-link]: https://percy.io/asbjornu/jsonresume-theme-golden
-[pixabay]: https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2589504
-[stocksnap]: https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2589504
+[pixabay]: https://pixabay.com/
+[stocksnap]: https://pixabay.com/users/stocksnap-894430/
 [styleshout]: https://www.styleshout.com/
 [work-img]: https://raw.githubusercontent.com/asbjornu/jsonresume-theme-golden/refs/heads/main/docs/work.png
 [work-link]: https://asbjornu.github.io/jsonresume-theme-golden/#work
