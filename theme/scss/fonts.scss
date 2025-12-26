@@ -1,0 +1,24 @@
+/*
+ * FontAwesome
+================================================================================ */
+
+@use 'pkg:@fortawesome/fontawesome-free/scss/fontawesome' as fa-core;
+@use 'pkg:@fortawesome/fontawesome-free/scss/solid' as fa-solid;
+@use 'pkg:@fortawesome/fontawesome-free/scss/brands' as fa-brands;
+
+/*
+ * Lora
+================================================================================ */
+@use 'fonts/lora/lora-bold.css';
+@use 'fonts/lora/lora-bold-italic.css';
+@use 'fonts/lora/lora-italic.css';
+@use 'fonts/lora/lora-regular.css';
+
+/*
+ * Poppins
+================================================================================ */
+@use 'fonts/poppins/poppins-bold.css';
+@use 'fonts/poppins/poppins-light.css';
+@use 'fonts/poppins/poppins-medium.css';
+@use 'fonts/poppins/poppins-regular.css';
+@use 'fonts/poppins/poppins-semibold.css';

@@ -13,16 +13,16 @@
   },
   "homepage": "https://github.com/asbjornu/jsonresume-theme-golden",
   "scripts": {
-    "build:styles": "lessc theme/less/styles.less theme/css/styles.css",
+    "build:styles": "sass --pkg-importer=node theme/scss/styles.scss theme/css/styles.css",
     "build:webfonts": "mkdir -p ./public/webfonts && cp -r ./node_modules/@fortawesome/fontawesome-free/webfonts/* ./public/webfonts/",
     "build": "npm run build:webfonts && npm run build:styles",
-    "serve": "resume serve --theme . --resume ${RESUME:-example-resume.json}",
+    "serve": "npm run build && resume serve --theme . --resume ${RESUME:-example-resume.json}",
     "export": "npm run build && resume export ./public/index.html --theme . --resume ${RESUME:-example-resume.json}",
     "start": "npm run build:styles && npm run serve",
     "release:prepare": "git checkout master && git pull && npm version patch -m \"Release: %s\""
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@fortawesome/fontawesome-free": "^7.1.0",
     "handlebars": "^4.1.2",
     "handlebars-utils": "^1.0.6",
     "marked": "^15.0.6",
@@ -31,11 +31,11 @@
   "devDependencies": {
     "@percy/cli": "^1.24.0",
     "@percy/script": "^1.1.0",
-    "less": "^4.2.2",
-    "resume-cli": "^3.0.8"
+    "resume-cli": "^3.0.8",
+    "sass": "^1.97.1"
   },
   "engineStrict": true,
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   }
 }

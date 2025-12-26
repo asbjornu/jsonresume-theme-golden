@@ -16,9 +16,9 @@ gulp.task('inline-img', function() {
     gulp.src('./theme/images/*')
         .pipe(imageDataURI({
             template: {
-                file: './theme/less/config.less.tpl'
+                file: './theme/scss/config.scss.tpl'
             }
         }))
-        .pipe(concat('config.less'))
-        .pipe(gulp.dest('./theme/less'));
+        .pipe(concat('config.scss'))
+        .pipe(gulp.dest('./theme/scss'));
 });
