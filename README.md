@@ -87,11 +87,13 @@ License][cc] attributed to [styleshout].
 The source code for generating resume is available under [the MIT
 license][mit].
 
-The background image is by [StockSnap] from [Pixabay].
+The background image is [Fog, Cold, Trees][bg-img] by [StockSnap] from
+[Pixabay].
 
 [about-img]: https://raw.githubusercontent.com/asbjornu/jsonresume-theme-golden/refs/heads/main/docs/about.png
 [about-link]: https://asbjornu.github.io/jsonresume-theme-golden/#about
 [asbjor.nu]: https://asbjor.nu/
+[bg-img]: https://pixabay.com/photos/fog-cold-trees-pines-mountain-2589504/
 [build-badge]: https://github.com/asbjornu/jsonresume-theme-golden/actions/workflows/build.yml/badge.svg
 [build-link]: https://github.com/asbjornu/jsonresume-theme-golden/actions/workflows/build.yml
 [cc]: http://creativecommons.org/licenses/by/3.0/
