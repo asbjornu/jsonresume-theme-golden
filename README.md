@@ -62,7 +62,7 @@ In order for the generated html to be self contained this theme ships with
 the background images embedded in the css. To change the images, edit the
 file `theme/scss/config.scss`:
 
-```sh
+```scss
 $bg-img-url: "data:image/...";
 $intro-bg-img-url: "data:image/...";
 ```
