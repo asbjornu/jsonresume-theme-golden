@@ -2,6 +2,9 @@
  * FontAwesome
 ================================================================================ */
 
+@use 'pkg:@fortawesome/fontawesome-free/scss/_variables' with (
+  $font-path: './webfonts',
+);
 @use 'pkg:@fortawesome/fontawesome-free/scss/fontawesome' as fa-core;
 @use 'pkg:@fortawesome/fontawesome-free/scss/solid' as fa-solid;
 @use 'pkg:@fortawesome/fontawesome-free/scss/brands' as fa-brands;
