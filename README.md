@@ -14,11 +14,11 @@ design][kards] by [styleshout], heavily modified to fit the needs of
 
 ## Getting started
 
-### Serve theme
+### Use theme
 
-If you have JSON Resume and this theme installed locally (through NPM or
-similar), you can run the following command to serve up a `resume.json`
-file:
+If you have JSON Resume and this theme installed locally (through NPM
+or cloned with Git), you can run the following command to serve up a
+`resume.json` file:
 
 ```sh
 resume serve --theme golden --resume <path/to/resume.json>
