@@ -1,0 +1,30 @@
+name: publish-npm
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+      with:
+        fetch-depth: 0
+    - uses: gittools/actions/gitversion/setup@v4.2.0
+      with:
+        versionSpec: '6.x'
+    - uses: gittools/actions/gitversion/execute@v4.2.0
+      id: gitversion
+    - uses: actions/setup-node@v6
+      with:
+        node-version: 16.x
+        cache: npm
+        registry-url: https://registry.npmjs.org
+    - run: npm ci
+    - run: npm version ${{ steps.gitversion.outputs.SemVer }} --no-git-tag-version
+    - run: npm publish --access public
