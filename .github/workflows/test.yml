@@ -9,10 +9,12 @@ jobs:
     - uses: actions/checkout@v6
     - uses: actions/setup-node@v6
       with:
-        node-version: 16.x
+        node-version: 24.x
         cache: npm
     - run: npm ci
     - run: npm run build
     - run: npx resume serve --resume=example-resume.json --theme . --port 5001 --silent &
     - run: sleep 2s
     - run: npx percy exec -- node tests/percy.js
+    - run: npm run export
+    - run: npm publish --dry-run --version=0.0.1-dev.$GITHUB_RUN_ID

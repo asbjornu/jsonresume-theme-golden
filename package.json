@@ -5,7 +5,7 @@
   "author": "asbjornu",
   "repository": {
     "type": "git",
-    "url": "https://github.com/asbjornu/jsonresume-theme-golden.git"
+    "url": "git+https://github.com/asbjornu/jsonresume-theme-golden.git"
   },
   "license": "MIT",
   "bugs": {
@@ -36,6 +36,6 @@
   },
   "engineStrict": true,
   "engines": {
-    "node": ">=18"
+    "node": ">=24"
   }
 }
