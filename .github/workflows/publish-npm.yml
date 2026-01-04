@@ -20,6 +20,7 @@ jobs:
       with:
         node-version: 16.x
         cache: npm
+        registry-url: https://registry.npmjs.org
     - run: npm ci
     - run: npm version ${{ steps.gitversion.outputs.SemVer }} --no-git-tag-version
     - run: npm publish --access public
