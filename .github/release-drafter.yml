@@ -1,0 +1,21 @@
+name-template: $RESOLVED_VERSION
+tag-template: $RESOLVED_VERSION
+categories:
+- title: ⬆️ Dependencies
+  labels: [dependency]
+- title: 🖋 Documentation
+  labels: [documentation]
+- title: 🐛 Bug Fixes
+  labels: [fix, bug, bugfix]
+- title: 📝 Configuration
+  labels: [config]
+- title: 👩🏻‍💻 Development
+  labels: [development]
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&'
+version-resolver:
+  default: minor
+template: |
+  <!-- REMEMBER TO ADJUST THE VERSION NUMBER AND TAG BEFORE PUBLISHING! -->
+
+  $CHANGES
