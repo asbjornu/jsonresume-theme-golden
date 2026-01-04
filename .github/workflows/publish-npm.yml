@@ -26,5 +26,8 @@ jobs:
         cache: npm
         registry-url: https://registry.npmjs.org
     - run: npm ci
-    - run: npm version ${{ steps.gitversion.outputs.SemVer }} --no-git-tag-version
+    - run: npm version "${{ steps.gitversion.outputs.SemVer }}" --no-git-tag-version
+    - run: npm publish --access public --tag="dev"
+      if: contains(steps.gitversion.outputs.SemVer, '-') == true
     - run: npm publish --access public
+      if: contains(steps.gitversion.outputs.SemVer, '-') == false
