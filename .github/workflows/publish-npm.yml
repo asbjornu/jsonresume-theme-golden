@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -24,5 +28,3 @@ jobs:
     - run: npm ci
     - run: npm version ${{ steps.gitversion.outputs.SemVer }} --no-git-tag-version
     - run: npm publish --access public
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
