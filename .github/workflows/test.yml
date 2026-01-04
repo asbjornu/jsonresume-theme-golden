@@ -16,3 +16,4 @@ jobs:
     - run: npx resume serve --resume=example-resume.json --theme . --port 5001 --silent &
     - run: sleep 2s
     - run: npx percy exec -- node tests/percy.js
+    - run: npm run export
